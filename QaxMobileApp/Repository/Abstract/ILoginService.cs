@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace QaxMobileApp.Repository.Abstract
 {
+    //adawd
     public interface ILoginService
     {
         Task<UserInfo> Login(string username, string password);
