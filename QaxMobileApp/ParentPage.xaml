@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QaxMobileApp.ParentPage"
+            SelectedTabColor="#407c87"
+            BackgroundColor="#EEF1F6">
+
+
+    <ContentPage Title="Quiz">
+
+        <Picker Title="Bir Sinif seçin">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Sinif 1</x:String>
+                    <x:String>Sinif 2</x:String>
+                    <x:String>Sinif 3</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+    </ContentPage>
+
+    <ContentPage Title="Imtahan">
+        <Picker Title="Buraxilis bali">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Sinif 1</x:String>
+                    <x:String>Sinif 2</x:String>
+                    <x:String>Sinif 3</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <!--Blok bali elave et-->
+    </ContentPage>
+
+    <ContentPage Title="Bildiris">
+
+    </ContentPage>
+</TabbedPage>

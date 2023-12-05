@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QaxMobileApp.MainPage"
+             BackgroundColor="#EEF1F6">
+
+    <NavigationPage.HasNavigationBar>
+        <OnPlatform x:TypeArguments="x:Boolean">
+            <On Platform="Android, iOS" Value="False" />
+        </OnPlatform>
+    </NavigationPage.HasNavigationBar>
+
+
+    <ContentPage.Content>
+
+
+
+        <Grid VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!--Üst Sol Köşe Logo-->
+            <Grid Grid.Row="0" Grid.Column="0">
+                <!-- Image çerçevesi (Arka plan) -->
+                <Frame BackgroundColor="#fff" HorizontalOptions="Start" VerticalOptions="Start" BorderColor="#fff" CornerRadius="50" Padding="5" Margin="15,-65,0,0" IsClippedToBounds="True">
+                    <!-- Image görünümü -->
+                    <Image Source="logo_qax.jpeg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" BackgroundColor="White" />
+                </Frame>
+            </Grid>
+
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Label Text="Hazırlıq Mərkəzi" TextColor="#333333" FontSize="20" FontAttributes="Bold" Margin="-100,-40,10,10"/>
+            </Grid>
+
+            <!-- Birinci Sıra -->
+            <Frame Grid.Row="0" Grid.Column="0" Margin="10,55,10,10" BorderColor="#A5DBDD"  Background="#D3E1E2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Spacing="5" WidthRequest="130" >
+                    <Image Source="icon_teacherpage.svg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" Margin="0,0,0,0" HorizontalOptions="Center" />
+                    <Button  Text="Müəllim Giriş" FontSize="16" Padding="7 ,0,7,0" Margin="0,30,0,0"  FontAttributes="Bold" TextColor="#EEF1F6" BackgroundColor="#407c87" Clicked="Teacher_Login" HorizontalOptions="Center"  />
+                </StackLayout>
+            </Frame>
+
+            <Frame Grid.Row="0" Grid.Column="1" Margin="10,55,10,10" BorderColor="#A5DBDD"  Background="#D3E1E2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Spacing="5" WidthRequest="130" >
+                    <Image Source="icon_parentpage.svg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" Margin="0,0,0,0" HorizontalOptions="Center" />
+                    <Button  Text="Valideyn Giriş" FontSize="16" Padding="7 ,0,7,0" Margin="0,30,0,0"  FontAttributes="Bold" TextColor="#EEF1F6" BackgroundColor="#407c87" Clicked="Parent_Login" HorizontalOptions="Center"  />
+                </StackLayout>
+            </Frame>
+
+
+            <!--İkinci Sıra-->
+            <Frame Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" BorderColor="#A5DBDD"  Background="#D3E1E2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Spacing="5" WidthRequest="130" Padding="7,0,7,0" >
+                    <Image Source="icon_successpage.svg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" Margin="0,0,0,0" HorizontalOptions="Center" />
+
+                    <Button  Text="Uğurlarımız" FontSize="16" Padding="14 ,0,14,0" Margin="0,30,0,0" FontAttributes="Bold" TextColor="#EEF1F6" BackgroundColor="#407c87" Clicked="Success_PageClicked" HorizontalOptions="Center"  />
+
+                </StackLayout>
+            </Frame>
+
+            <Frame Grid.Row="1" Grid.Column="0" Margin="10,10,10,10" BorderColor="#A5DBDD"  Background="#D3E1E2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Spacing="5" WidthRequest="130">
+                    <Image Source="icon_cup.svg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" Margin="0,0,0,0" HorizontalOptions="Center" />
+
+                    <Button  Text="Fəxrlərimiz" FontSize="16" Padding="8,0,8,0" Margin="15,30,15,0" FontAttributes="Bold" TextColor="#EEF1F6" BackgroundColor="#407c87" Clicked="Achievements_PageClicked" HorizontalOptions="Center"  />
+                </StackLayout>
+            </Frame>
+
+
+            <!--Üçüncü Sıra-->
+            <Frame Grid.Row="2" Grid.Column="0" Margin="10,10,10,10" BorderColor="#A5DBDD"  Background="#D3E1E2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Spacing="5" WidthRequest="130" >
+                    <Image Source="icon_servicepage.svg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" Margin="0,0,0,0" HorizontalOptions="Center" />
+
+                    <Button  Text="Xidmətlərimiz"  Padding="12 ,0,12,0" FontSize="16" Margin="0,30,0,0" FontAttributes="Bold"  TextColor="#EEF1F6" BackgroundColor="#407c87" Clicked="Services_PageClicked" HorizontalOptions="Center"  />
+                </StackLayout>
+            </Frame>
+
+            <Frame Grid.Row="2" Grid.Column="1" Margin="10,10,10,10" BorderColor="#A5DBDD"  Background="#D3E1E2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Spacing="5" WidthRequest="130">
+                    <Image Source="icon_contactpage.svg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" Margin="0,0,0,0" HorizontalOptions="Center" />
+
+                    <Button Text="Əlaqə" Padding="40 ,0,40,0" FontSize="16" Margin="0,30,0,0" FontAttributes="Bold"  TextColor="#EEF1F6" BackgroundColor="#407c87" Clicked="Contact_PageClicked" HorizontalOptions="Center"  />
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

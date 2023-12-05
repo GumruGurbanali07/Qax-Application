@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QaxMobileApp.ServicesPage"
+             Title="Xidmətlərimiz"
+             BackgroundColor="#EEF1F6">
+    <VerticalStackLayout>
+
+        <!--Üst Sol Köşe Logo-->
+        <Grid Grid.Row="0" Grid.Column="0">
+            <!-- Image çerçevesi (Arka plan) -->
+            <Frame BackgroundColor="#fff" HorizontalOptions="Start" VerticalOptions="Start" BorderColor="#fff" CornerRadius="50" Padding="5" Margin="15,10,0,0" IsClippedToBounds="True">
+                <!-- Image görünümü -->
+                <Image Source="logo_qax.jpeg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" BackgroundColor="White" />
+            </Frame>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Label Text="Hazırlıq Mərkəzi" TextColor="#333333" FontSize="20" FontAttributes="Bold" Margin="100,-50,10,10"/>
+        </Grid>
+
+        <ScrollView>
+            <StackLayout Padding="15">
+
+                <!-- Hizmet 1 -->
+                <Frame BackgroundColor="#D3E1E2" CornerRadius="10" Margin="0,0,0,15">
+                    <StackLayout>
+                        <Image Source="quality.png" HeightRequest="5" WidthRequest="5" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                        <Label Text="Abiturient kursları" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,10,0,0" />
+                       
+                    </StackLayout>
+                </Frame>
+
+                <!-- Hizmet 2 -->
+                <Frame BackgroundColor="#D3E1E2" CornerRadius="10" Margin="0,0,0,15">
+                    <StackLayout>
+                        <Image Source="quality.png" HeightRequest="5" WidthRequest="5" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                        <Label Text="Təkmilləşdirmə kursları" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,10,0,0" />
+                        
+                    </StackLayout>
+                </Frame>
+
+                <!-- Hizmet 3 -->
+                <Frame BackgroundColor="#D3E1E2" CornerRadius="10" Margin="0,0,0,15">
+                    <StackLayout>
+                        <Image Source="quality.png" HeightRequest="5" WidthRequest="5" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                        <Label Text="Məktəbəhazırlıq kursları" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,10,0,0" />
+                        
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#D3E1E2" CornerRadius="10" Margin="0,0,0,10">
+                    <StackLayout>
+                        <Image Source="quality.png" HeightRequest="5" WidthRequest="5" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                        <Label Text="General English kursları" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,10,0,0" />
+                        
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#D3E1E2" CornerRadius="10" Margin="0,0,0,10">
+                    <StackLayout>
+                        <Image Source="quality.png" HeightRequest="5" WidthRequest="5" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                        <Label Text="MİQ hazırlıq kursları" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,10,0,0" />
+                       
+                    </StackLayout>
+                </Frame>
+
+                <!-- Daha fazla hizmet eklemek için aynı şablonu kullanabilirsiniz -->
+
+            </StackLayout>
+        </ScrollView>
+
+    </VerticalStackLayout>
+</ContentPage>
