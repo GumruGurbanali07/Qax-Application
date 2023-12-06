@@ -7,22 +7,28 @@ namespace QaxMobileApp.Repository.Concrete
 {
     public class LoginService : ILoginService
     {
-        
+       
 
-        
 
-        public Task<UserInfo> Login(string username, string password)
+
+        public Task<TeacherInfo> Login(string username, string password)
         {
             if (username == "Qumru" && password == "12345")
             {
                 // Return user information on successful login
-                return Task.FromResult(new QaxMobileApp.Models.UserInfo { UserId = 1, UserName = "Qumru" });
+                return Task.FromResult(new QaxMobileApp.Models.TeacherInfo { UserId = 1, UserName = "Qumru" });
+            }
+            else if (username == "Nurlane" && password == "1234")
+            {
+                // Return user information on successful login
+                return Task.FromResult(new QaxMobileApp.Models.TeacherInfo { UserId = 2, UserName = "Nurlane" });
             }
             else
             {
                 // Return null or throw an exception for unsuccessful login
-                return Task.FromResult<UserInfo>(null);
+                return Task.FromResult<TeacherInfo>(null);
             }
+
         }
     }
 }

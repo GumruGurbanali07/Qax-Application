@@ -26,23 +26,22 @@
         <!--<Label Text="Istifadeci girisi" FontSize="Large" HorizontalOptions="Center" Margin="-50"  TextColor="White"/>-->
 
         <StackLayout Margin="10">
-            <Label Text="İş Nömrəsi" TextColor="#333333" FontAttributes="Bold" FontSize="20" />
+            <Label Text="İstifadəçi Adı:" TextColor="#333333" FontAttributes="Bold" FontSize="20" />
 
             <Frame Margin="0,10,0,0" BorderColor="#407c87">
-                <Entry Placeholder="İş Nömrəsi" x:Name="Name" PlaceholderColor="#333333" />
+                <Entry Placeholder="İstifadəçi Adı" x:Name="Name" PlaceholderColor="#333333" />
             </Frame>
 
-            <Label Margin="0,30,0,0" Text="Şifrə" TextColor="#333333" FontAttributes="Bold" FontSize="20" />
+            <Label Margin="0,30,0,0" Text="Şifrə:" TextColor="#333333" FontAttributes="Bold" FontSize="20" />
 
 
             <Frame Margin="0,10,0,0" BorderColor="#407c87">
                 <Entry Placeholder="Şifrə" x:Name="Password" IsPassword="True" PlaceholderColor="#333333" TextColor="#333333" />
             </Frame>
 
-            <Label Text="Şifrəni dəyişdir" Margin="0,20,0,0" FontSize="15" TextDecorations="Underline" FontAttributes="Bold" TextColor="#407c87"/>
-
+           
             <Button Margin="0,20,0,0" BorderColor="#A5DBDD" FontSize="18" FontAttributes="Bold" Text="Giriş" Clicked="Login_ParentPageClicked" BackgroundColor="#407c87" TextColor="White" />
-
+            <Label x:Name="ErrorLabel" TextColor="Red" />
         </StackLayout>
     </Grid>
 </ContentPage>

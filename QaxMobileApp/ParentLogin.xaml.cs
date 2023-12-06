@@ -1,14 +1,30 @@
+﻿using QaxMobileApp.Repository.Abstract;
+
 namespace QaxMobileApp;
 
 public partial class ParentLogin : ContentPage
 {
-	public ParentLogin()
+	private readonly IParentLoginService _parentLoginService;
+	public ParentLogin(IParentLoginService parentLoginService)
 	{
 		InitializeComponent();
+		_parentLoginService = parentLoginService;
 	}
 
-	public void Login_ParentPageClicked(object sender, EventArgs e)
+	private async void Login_ParentPageClicked(object sender, EventArgs e)
 	{
-		Navigation.PushAsync(new ParentPage());
-	}
+        string username = Name.Text;
+        string password = Password.Text;
+        var user = await _parentLoginService.Login(username, password);
+
+        if (user != null)
+        {
+            // Successful login, navigate to the next page
+            await Navigation.PushAsync(new ParentPage());
+        }
+        else
+        {
+            ErrorLabel.Text = "İstifadəçi adı və ya şifrə yalnışdır.Yenidən yoxlayın";
+        }
+    }
 }

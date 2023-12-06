@@ -12,7 +12,7 @@ public partial class TeacherLogin : ContentPage
         _loginService = loginService;
     }
 
-    private async void Login_TeacherPageClicked(object sender, EventArgs e)
+    private async void Login_TeacherPageClicked(object sender, EventArgs e) 
     {
         string username = UserName.Text;
         string password = Password.Text;

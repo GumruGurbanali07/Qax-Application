@@ -27,6 +27,7 @@ namespace QaxMobileApp
         {
             
             services.AddSingleton<ILoginService, LoginService>();
+            services.AddSingleton<IParentLoginService, ParentLoginService>();
         }
     }
 

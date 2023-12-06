@@ -19,9 +19,10 @@ namespace QaxMobileApp
             Navigation.PushAsync(new TeacherLogin(loginService));
         }
 
-        private void Parent_Login(object sender, EventArgs e)
+        public void Parent_Login(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ParentLogin());
+            IParentLoginService parentLoginService = new ParentLoginService();
+            Navigation.PushAsync(new ParentLogin(parentLoginService));
         }
 
         private void Success_PageClicked(object sender, EventArgs e)
