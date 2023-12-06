@@ -6,5 +6,6 @@ namespace QaxMobileApp.Repository.Abstract
     public interface ILoginService
     {
         Task<UserInfo> Login(string username, string password);
+       
     }
 }

@@ -7,6 +7,10 @@ namespace QaxMobileApp.Repository.Concrete
 {
     public class LoginService : ILoginService
     {
+        
+
+        
+
         public Task<UserInfo> Login(string username, string password)
         {
             if (username == "Qumru" && password == "12345")
