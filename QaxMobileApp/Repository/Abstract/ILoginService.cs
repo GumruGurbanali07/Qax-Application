@@ -5,7 +5,7 @@ namespace QaxMobileApp.Repository.Abstract
     //adawd
     public interface ILoginService
     {
-        Task<TeacherInfo> Login(string username, string password);
+        Task<Teacher> Login(string username,string usersurname, string password);
        
     }
 }

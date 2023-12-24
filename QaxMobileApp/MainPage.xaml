@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<!--<?xml version="1.0" encoding="utf-8" ?>
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -28,11 +28,11 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <!--Üst Sol Köşe Logo-->
+            --><!--Üst Sol Köşe Logo--><!--
             <Grid Grid.Row="0" Grid.Column="0">
-                <!-- Image çerçevesi (Arka plan) -->
+                --><!-- Image çerçevesi (Arka plan) --><!--
                 <Frame BackgroundColor="#fff" HorizontalOptions="Start" VerticalOptions="Start" BorderColor="#fff" CornerRadius="50" Padding="5" Margin="15,-65,0,0" IsClippedToBounds="True">
-                    <!-- Image görünümü -->
+                    --><!-- Image görünümü --><!--
                     <Image Source="logo_qax.jpeg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" BackgroundColor="White" />
                 </Frame>
             </Grid>
@@ -41,7 +41,7 @@
                 <Label Text="Hazırlıq Mərkəzi" TextColor="#333333" FontSize="20" FontAttributes="Bold" Margin="-100,-40,10,10"/>
             </Grid>
 
-            <!-- Birinci Sıra -->
+            --><!-- Birinci Sıra --><!--
             <Frame Grid.Row="0" Grid.Column="0" Margin="10,55,10,10" BorderColor="#A5DBDD"  Background="#D3E1E2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout Spacing="5" WidthRequest="130" >
                     <Image Source="icon_teacherpage.svg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" Margin="0,0,0,0" HorizontalOptions="Center" />
@@ -57,7 +57,7 @@
             </Frame>
 
 
-            <!--İkinci Sıra-->
+            --><!--İkinci Sıra--><!--
             <Frame Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" BorderColor="#A5DBDD"  Background="#D3E1E2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout Spacing="5" WidthRequest="130" Padding="7,0,7,0" >
                     <Image Source="icon_successpage.svg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" Margin="0,0,0,0" HorizontalOptions="Center" />
@@ -76,7 +76,7 @@
             </Frame>
 
 
-            <!--Üçüncü Sıra-->
+            --><!--Üçüncü Sıra--><!--
             <Frame Grid.Row="2" Grid.Column="0" Margin="10,10,10,10" BorderColor="#A5DBDD"  Background="#D3E1E2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout Spacing="5" WidthRequest="130" >
                     <Image Source="icon_servicepage.svg" WidthRequest="60" HeightRequest="60" Aspect="AspectFit" Margin="0,0,0,0" HorizontalOptions="Center" />
@@ -94,4 +94,4 @@
             </Frame>
         </Grid>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage>-->

@@ -15,10 +15,11 @@ public partial class TeacherLogin : ContentPage
     private async void Login_TeacherPageClicked(object sender, EventArgs e) 
     {
         string username = UserName.Text;
+        string usersurname=UserSurname.Text;
         string password = Password.Text;
        
        
-            var user = await _loginService.Login(username, password);
+            var user = await _loginService.Login(username,usersurname, password);
 
             if (user != null)
             {

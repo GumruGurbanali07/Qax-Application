@@ -9,7 +9,7 @@ namespace QaxMobileApp.Repository.Abstract
 {
     public interface IParentLoginService
     {
-        Task<ParentInfo> Login(string username, string password);
+        Task<Student> Login(string username, string password);
 
     }
 }

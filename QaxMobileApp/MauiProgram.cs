@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using QaxMobileApp.Repository.Abstract;
-using QaxMobileApp.Repository.Concrete;
+//using QaxMobileApp.Repository.Concrete;
 
 namespace QaxMobileApp
 {
@@ -23,12 +23,12 @@ namespace QaxMobileApp
 
             return builder.Build();
         }
-        public static void ConfigureServices(IServiceCollection services)
-        {
+        //public static void ConfigureServices(IServiceCollection services)
+        //{
             
-            services.AddSingleton<ILoginService, LoginService>();
-            services.AddSingleton<IParentLoginService, ParentLoginService>();
-        }
+        //    services.AddSingleton<ILoginService, LoginService>();
+        //    services.AddSingleton<IParentLoginService, ParentLoginService>();
+        //}
     }
 
 }
