@@ -1,48 +1,42 @@
-﻿//using QaxMobileApp.Repository.Abstract;
-//using QaxMobileApp.Repository.Concrete;
+﻿// using statements...
 
-//namespace QaxMobileApp
-//{
-//    public partial class MainPage : ContentPage
-//    {
+namespace QaxMobileApp
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
-//        public MainPage()
-//        {
-//            InitializeComponent();
-          
-//        }
+        private void Teacher_Login(object sender, EventArgs e)
+        {
+            // Your logic for Teacher_Login
+        }
 
-//        public void Teacher_Login(object sender, EventArgs e)
-//        {
-//            ILoginService loginService = new LoginService(); 
+        private void Parent_Login(object sender, EventArgs e)
+        {
+            // Your logic for Parent_Login
+        }
 
-//            Navigation.PushAsync(new TeacherLogin(loginService));
-//        }
+        private void Success_PageClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new OurSuccessesPage());
+        }
 
-//        public void Parent_Login(object sender, EventArgs e)
-//        {
-//            IParentLoginService parentLoginService = new ParentLoginService();
-//            Navigation.PushAsync(new ParentLogin(parentLoginService));
-//        }
+        private void Achievements_PageClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new OurAchievementsPage());
+        }
 
-//        private void Success_PageClicked(object sender, EventArgs e)
-//        {
-//            Navigation.PushAsync(new OurSuccessesPage());
-//        }
+        private void Services_PageClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ServicesPage());
+        }
 
-//        private void Achievements_PageClicked(object sender, EventArgs e)
-//        {
-//            Navigation.PushAsync(new OurAchievementsPage());
-//        }
-
-//        private void Services_PageClicked(object sender, EventArgs e)
-//        {
-//            Navigation.PushAsync(new ServicesPage());
-//        }
-
-//        private void Contact_PageClicked(object sender, EventArgs e)
-//        {
-//            Navigation.PushAsync(new ContactPage());
-//        }
-//    }
-//}
+        private void Contact_PageClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactPage());
+        }
+    }
+}
